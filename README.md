@@ -24,3 +24,14 @@ Run `gaku_imex` generator :
 Run the server:
 
     $ rails s
+
+
+### Tests
+
+Prepare the test app: 
+
+    $ rake test_app
+
+Run specs: 
+
+    $ rspec
