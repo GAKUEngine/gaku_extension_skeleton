@@ -6,22 +6,22 @@ Sample GAKUEngine extension
 
 ### Install
 
-Add to your `Gemfile` :
+Add 'skeleton' to your `Gemfile` :
 
 ```ruby
 gem 'gaku', github: 'GAKUEngine/gaku'
 gem 'gaku_extension_skeleton', github: 'GAKUEngine/gaku_extension_skeleton'
 ```
 
-Install dependencies:
+Install the dependencies:
 
     $ bundle install
 
-Run `gaku_imex` generator :
+Run the 'skeleton' install generator:
 
     $ rails g gaku_extension_skeleton:install
 
-Run the server:
+Test to make sure installation was successfull:
 
     $ rails s
 
