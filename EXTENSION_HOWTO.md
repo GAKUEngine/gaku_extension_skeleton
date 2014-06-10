@@ -24,11 +24,11 @@ Creating from Scratch
 It is possible to create an extension without the Skeleton. You could generate a rails extension with ```rails g gaku_my_extension_name``` but this will create a lot of extras which you'll likely want to clean out. We recommend creating your app from scratch, starting with a gemspec and Gemfile and implementing only the pieces you need.  
   
 If your extension is a Rails style extension you'll want to include gaku the gaku gem. We recomment pointing at the GitHub repository by adding the following to your gemfile:
-```
+```ruby
 gem 'gaku', github: 'GAKUEngine/gaku'
 ```
 And these lines to your gemspec:
-```
+```ruby
 s.add_dependency 'gaku_core',    '~> 0.1.1'
 s.add_dependency 'gaku_testing', '~> 0.1.1'
 s.add_dependency 'gaku_admin',   '~> 0.1.1'
@@ -51,11 +51,11 @@ We strongly recommend you add tests/specs either before or during development. G
 Base Tests/Test App
 -------------------
 With gaku_testing installed you have access to the base tests and the test app. Simply make your specs as if you were making them in gaku_core, then run:
-```
-bundle exec rake test_app
-```
+
+    $ bundle exec rake test_app
+
 After that you can run specs as usualy with rspec etc.
 
 Altering and Appending Views
 ============================
-To append to or add to views in GAKU Engine we generally recommend you use (deface)[https://github.com/spree/deface]. You will need to refer to gaku_frontend to find the tags/views/partials you will want to modify.
+To append to or add to views in GAKU Engine we generally recommend you use [deface](https://github.com/spree/deface). You will need to refer to gaku_frontend to find the tags/views/partials you will want to modify.
