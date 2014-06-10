@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/GAKUEngine/gaku_extension_skeleton.png)](https://travis-ci.org/GAKUEngine/gaku_extension_skeleton)
+
+
 gaku_extension_skeleton
 =======================
 
